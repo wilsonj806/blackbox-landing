@@ -1,0 +1,208 @@
+<!-- 
+Product Landing Page
+Version: 0.75.0
+Date Started: 06/15/2018
+Last Updated: 06/26/2018
+Requirements:
+https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page
+-->
+
+
+<!-- 
+Current Status:
+1. Bare minimum to pass
+2. Sized for mobile
+3. Partially sized for larger screens
+
+
+To do:
+1. Use jQuery for event listener type animations for the image grid?
+2. 
+3. Be super anal about the heights of the image grid adding up well so that everything fits in a box
+4. Figure out Bootstrap's Collapse JS plugin so you can use it
+
+Current changes
+
+
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Blackbox Landing Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Scripts and other libraries here -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> <!--for Bootstrap 4.1 CSS modules -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="<sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtV></sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtV>lRW3tvkXWZh58N9jp" crossorigin="anonymous"> <!-- For Font Awesome Icons -->
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<link href="css/test.css" rel="stylesheet" type="text/css">	<!-- Link to CSS -->
+
+
+
+</head>
+
+<body>
+<header id="header">
+
+<nav class="navbar-dark bg-dark  navbar-expand-md" id="nav-bar"> <!-- Bootstrap is messing with the nav when you upload to Codepen --> 
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navcol" aria-controls="navcol" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+    <div class="nav-ctr navbar  collapse navbar-collapse " id="navcol">
+        <div class="navbrd-ctr scn-dpy">       
+            <img src="img/icon.png" alt="icon" id= "header-img" class="navbar-brand">
+            <h2 class="nav-hdg">Blackbox</h2>
+        </div>
+        <ul class="navbar-nav">
+            <li class="navbrd-ctr mob-dpy">       
+                <img src="img/icon.png" alt="icon" id= "header-img" class="navbar-brand">
+                <h2 class="nav-hdg">Blackbox</h2>
+            </li>
+            <li class="nav-item"><a href="#feature" class="nav-link">Features</a></li>
+            <li class="nav-item"><a href="#config" class="nav-link">Configurations</a></li>
+            <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+            <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+
+</header>
+
+
+<main>   
+    <img class="bck-imgm" src="./img/back-m.jpg" alt="background">
+    <img class="bck-imgs" src="./img/back-s.jpg" alt="background">
+    <div class="wrp-img1 justify-content-center">
+        <img src="./img/main.jpg" alt="main image" class="d-flex hd-img">
+        
+    </div>
+    
+    <div class="ctr-ftr" id="feature">
+        <h1 class="" id="title">Introducing the Blackbox</h1>    
+        <p class="">
+            As a user of things, is it not inconvenient  to have thirty different appliances to do thirty different tasks. Now featuring a new offering from Blackbox Industries, the Blackbox 1.0! The Blackbox does everything you've ever wanted, but in one single package. By using space age materials, sintered multi-phase inductors, the Internet of things, and quantum computing, we've even managed to compress the physical footprint of the Blackbox into the size of a small box. Of course no one package fits every user, so if our standard offerings don't meet your needs, we also offer custom built Blackboxes.
+        </p>
+        <p>Here's some of the features you'll get when you buy a Blackbox:</p>
+        <ul class="ctr-li">
+            <li class="li-ftr">Quick Charge</li>
+            <li class="li-ftr">The official Blackbox app for phone connectivity</li>
+            <li class="li-ftr">Noise canceling</li>
+            <li class="li-ftr">4800 DPI scanning</li>
+            <li class="li-ftr">CD drive</li>
+            <li class="li-ftr">High traction tires</li>
+        </ul>
+        <div class="wrp-vid d-flex">
+            <figcaption class="">
+                Here's a video that lists all of the features that can be found in a Blackbox.
+            </figcaption>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ac7G7xOG2Ag" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="d-flex vid" id="video"></iframe>
+        </div>
+    </div>
+    
+    
+    <div class="ctr-imgs" id="config">
+        <h2 class="">Configurations</h2>
+        <p>Below are some sample pictures of the various Blackbox configurations you can purchase. This is not meant to be an exhaustive list, but we hope it jogs your imagination and gives you ideas on how a Blackbox can fit into your life or company.</p>
+        <div class="wrp-grid">
+            <img src="./img/grid1.JPG" alt="" class="d-flex grd-img">
+            <img src="./img/grid2.JPG" alt="" class="d-flex grd-img">
+            <img src="./img/grid3.JPG" alt="" class="d-flex grd-img">
+            <img src="./img/grid4.JPG" alt="" class="d-flex grd-img">
+            <img src="./img/grid5.JPG" alt="" class="d-flex grd-img">
+            <img src="./img/grid6.JPG" alt="" class="d-flex grd-img">
+        </div>
+        
+    </div>
+
+
+    
+        <div class="ctr-qte" id="testimonials">       
+            <h2 class="">Testimonials</h2>
+            <div class="wrp-qte" id="testimonials">       
+            <p class="qte qte-shared">"This is incredible! I never knew I needed this"</p>
+            <p class="auth qte-shared">- Morgan Yu Transtar Industries</p>
+            <p class="qte qte-shared">"The high traction tires of the Blackbox really help when I go offroad! Would buy again!"</p>
+            <p class="auth qte-shared">- Jane Doe UNSC Marine</p>
+            <p class="qte qte-shared">"It just works!"</p>
+            <p class="auth qte-shared">- Todd Howard Bethesda Game Studio</p>
+            </div>
+        </div>
+
+   
+    
+    <div class="ctr-price" id="pricing">
+        <h2 class="">Pricing and Features</h2>
+    
+        <p>Here's some of the convenient prebaked options that we provide. Other options are available if you need them, so feel free to contact us for more information.</p>       
+        <!-- Table was done with following Emmet line: table>tr*6>(td.col$*5{Hello}*5)*5 -->
+        <table class="tbl mx-auto">
+            <tr>
+                <th class="col1"></th>
+                <th class="col2">Standard</th>
+                <th class="col3">Premium</th>
+                <th class="col4">Business</th>
+            </tr>
+            <tr>
+                <td class="col1">CD Drive</td>
+                <td class="col2"><i class="fas fa-check"></i></td>
+                <td class="col3"><i class="fas fa-check"></i></td>
+                <td class="col4"><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+                <td class="col1">High Traction Tires</td>
+                <td class="col2"><i class="fas fa-times"></i></td>
+                <td class="col3"><i class="fas fa-check"></i></td>
+                <td class="col4"><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+                <td class="col1">4800 DPI Scanning</td>
+                <td class="col2"><i class="fas fa-times"></i></td>
+                <td class="col3"><i class="fas fa-check"></i></td>
+                <td class="col4"><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+                <td class="col1">Official App</td>
+                <td class="col2"><i class="fas fa-check"></i></td>
+                <td class="col3"><i class="fas fa-check"></i></td>
+                <td class="col4"><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+                <td class="col1">Noise Canceling</td>
+                <td class="col2"><i class="fas fa-times"></i></td>
+                <td class="col3"><i class="fas fa-times"></i></td>
+                <td class="col4"><i class="fas fa-check"></i></td>
+            </tr>
+        </table>
+    </div>
+</main>
+
+<footer id="contact">
+    <h2 class="">Contact</h2>
+    <p> Contact us now if you have questions about our product or if you would like to request a quote! We'd be happy to hear from you.</p>
+    <form id="form">
+            <label class="lb-bi" for="name" id="name-label">* Name:</label> 
+            <input class="in-bi" id="name" name="name" placeholder=" Enter Name Here" required>
+            <br>
+            <label class="lb-bi" for="email" id="email-label">* Email:</label>
+            <input class="in-bi" id="email" name="email" type="email" placeholder=" Enter Email Here" required>
+            <br>
+            <textarea> Additional Comments</textarea>
+            <div class="wrp-butn">
+                <button class="butn-sub">Submit</button>    
+            </div>
+            
+    </form>
+</footer>
+
+<!-- Bootstrap JS plugins, Popper.JS, jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+</body>
+
+
+
+</html>
