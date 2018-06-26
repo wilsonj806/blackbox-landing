@@ -1,0 +1,374 @@
+/* CSS Product Landing Page */
+
+/* Naming Convention
+
+nav= navbar although Bootstrap uses it
+wrp = wrapper
+ctr= container
+qte = quote
+btn or butn = button
+ftr = feature
+li = list 
+usli = unstyled list
+scn = screen
+dpy = display
+mob = mobile
+*/
+
+.dpy-flex{
+    display:none;
+}
+
+body{
+    background-color:#3B4054;
+    color:white;
+}
+
+h1,h2,h3,h4{
+    text-align:center;
+    width:70%;
+    margin:10px auto 10px auto;
+    font-family: 'Roboto' sans-serif;
+}
+
+h1{
+    font-style: italic;
+}
+
+h2{
+    padding-top:20px;
+    padding-bottom:12px;
+}
+
+p{
+    padding:10px 0px 10px 0px;
+    width:90%;
+    margin:5px auto 5px auto;
+}
+
+
+
+main{
+margin-top:30px;
+}
+
+/* Nav Bar CSS */
+
+nav{
+    width:100vw;
+    font-family: 'Roboto' sans-serif;
+    font-style:italic;
+    font-weight: 700;
+    position:auto;
+    top:0;
+    left:0;
+}
+
+.bg-dark{
+     background-color:#FEDA00 !important;
+}
+
+.scn-dpy{
+    display:none;
+}
+
+
+.nav-ctr{
+    /* justify-content: space-between;*/
+    width:100%;
+
+}
+
+.navbar-nav{
+width:100%;
+}
+
+.navbar-brand{
+    max-width:40px;
+    height:auto;
+
+    /* align-self:center; */
+}
+
+.nav-hdg{
+    color:black !important;
+    display:inline-block;
+    width:20%;
+    padding-top:0px;
+    padding-bottom:0px;    
+}
+
+.nav-link{
+    color:black !important;
+}
+
+.nav-link:hover{
+    color:black;
+    text-decoration-style: none;
+}
+
+.nav-item:hover{
+    border-bottom:3px solid black !important;
+}
+
+.navbar-item{
+    margin:auto 5px auto 5px;
+}
+
+/* Features CSS */
+
+.bck-imgm{
+    object-fit: cover;
+    z-index:-1;
+    position:absolute;
+    top:0;
+    left:0;
+    opacity:.35;
+    background-color:#E1E1E1;
+    box-shadow:0.125em 0.125em .25em inset #3B4054;
+}
+
+.bck-imgs{
+    display:none;
+}
+
+.hd-img{
+width:80%;
+height:auto;
+object-fit: contain;
+filter:grayscale(20%);
+box-shadow: 0 .125rem 1rem rgba(0,0,0,.5);
+border:3px solid black;
+border-radius:3px;
+margin-right:auto;
+margin-left:auto;
+
+}
+
+.ctr-li{
+    width:85%;
+    margin-right:auto;
+    margin-left:auto;
+    margin-bottom:0px;
+}
+
+.ctr-ftr{
+    width:100vw;
+    margin-bottom:30px;
+}
+
+.wrp-vid{
+    flex-flow:column wrap;
+    padding-top:15px;
+    padding-bottom:15px;
+    margin-bottom:-30px;
+}
+
+
+.vid{
+    max-width:100vw;
+    height:211px;
+}
+
+figcaption{
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    margin-bottom: 5px;
+    padding-top:18px;
+}
+
+/* Config grid CSS */
+
+.ctr-imgs{
+    width:100vw;
+
+}
+
+.wrp-grid{
+    column-count:2;
+    column-gap:0;
+    width:90%;
+    margin:10px auto 10px auto;
+}
+
+.grd-img{
+    display:inline-block;
+    width:45vw;
+    object-fit: contain;
+    margin:0;
+
+}
+
+/* Testimonials CSS */ 
+
+.wrp-qte{
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.qte-shared{
+    text-align: center;
+    padding:0;
+    width:95%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto' sans-serif;
+    
+}
+
+.auth{
+    margin-bottom:10px;
+}
+
+.qte{
+    margin-top:10px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+
+/* Pricing and table CSS */
+
+
+table{
+    font:18px;
+}
+
+
+.col1{
+    width:150px;
+    text-align: left;
+}
+
+th{
+    background-color:#FEDA00;
+    color:black;
+}
+
+td,th{
+    width:80px;
+    height:38px;
+    text-align: center;
+    border:1px solid white;
+
+}
+
+/* Contact CSS */
+
+.lb-bi{
+    width:95%;
+}
+
+.in-bi{
+    width:80%;
+}
+
+textarea{
+    margin:10px auto 10px auto;
+    width:95%;
+}
+
+
+
+
+@media screen and (min-width:991px){
+
+p{
+    width:55%;
+
+}
+
+/* Nav CSS */
+
+nav-ctr{
+    height:60px;
+}
+
+.mob-dpy{
+    display:none;
+}
+
+.scn-dpy{
+display:inline-block;
+}
+
+.navbar-nav{
+width:auto;
+}
+
+/* Features CSS */
+
+
+.hd-img{
+    width:50%;
+}
+
+.bck-imgs{
+    object-fit: cover;
+    z-index:-1;
+    position:absolute;
+    top:0;
+    left:0;
+    opacity:.35;
+    background-color:#E1E1E1;
+    box-shadow:0.125em 0.125em .25em inset #3B4054;
+    display:block;
+    width:100vw;
+
+}
+
+.bck-imgm{
+    display:none;
+}
+
+.ctr-li{
+    width:45%;
+    margin-right:auto;
+    margin-left:auto;
+    margin-bottom:0px;
+}
+
+
+.wrp-vid{
+    margin-right:auto;
+    margin-left:auto;
+    width:90%;
+}
+
+
+.vid{
+    height:315px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+figcaption{
+    width:33%;
+    text-align: center;
+}
+
+/* Grid CSS */
+
+
+.wrp-grid{
+    column-count:3;
+    column-gap:0;
+    width:80%;
+    margin:10px auto 10px auto;
+}
+
+.grd-img{
+    display:inline-block;
+    width:25vw;
+    object-fit: contain;
+    margin:0 0 5px 0;
+
+}
+
+
+
+
+}
