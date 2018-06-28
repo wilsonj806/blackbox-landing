@@ -1,9 +1,12 @@
 # Product Landing Page Project
 
+## [Live Site](https://wilsonj806.github.io/blackbox-landing/)
+
+## [Codepen Link](https://codepen.io/wilsonj806/full/ZRxYzK/)
+
 ## Versioning:
 
 Versioning is done using [SemVer](https://semver.org)
-
 
 ## Contributor(s):
 
