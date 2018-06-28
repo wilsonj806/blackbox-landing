@@ -1,4 +1,4 @@
-/* CSS Product Landing Page */
+/* Test CSS for Product Landing Page */
 
 /* Naming Convention
 
@@ -13,11 +13,9 @@ usli = unstyled list
 scn = screen
 dpy = display
 mob = mobile
+tsml = testimonial
 */
 
-.dpy-flex{
-    display:none;
-}
 
 body{
     background-color:#3B4054;
@@ -26,13 +24,12 @@ body{
 
 h1,h2,h3,h4{
     text-align:center;
-    width:70%;
+    width:80%;
     margin:10px auto 10px auto;
-    font-family: 'Roboto' sans-serif;
-}
+    font-family: "Roboto" ,sans-serif;
+    font-weight: 600;
 
-h1{
-    font-style: italic;
+
 }
 
 h2{
@@ -42,30 +39,30 @@ h2{
 
 p{
     padding:10px 0px 10px 0px;
-    width:90%;
+    width:80%;
     margin:5px auto 5px auto;
 }
 
 
 
 main{
-margin-top:30px;
+    margin-top:30px;
 }
 
 /* Nav Bar CSS */
 
 nav{
     width:100vw;
-    font-family: 'Roboto' sans-serif;
+    font-family: "Roboto" ,sans-serif;
     font-style:italic;
     font-weight: 700;
     position:auto;
     top:0;
     left:0;
-}
+    }
 
 .bg-dark{
-     background-color:#FEDA00 !important;
+     background-color:rgba(254,218,0,1) !important;
 }
 
 .scn-dpy{
@@ -79,23 +76,35 @@ nav{
 
 }
 
+.navbrd-ctr{
+    flex-flow: row wrap;
+    align-content: baseline;
+    justify-content: flex-start;
+}
+
+.mob-dpy{
+    display:flex;
+}
+
 .navbar-nav{
 width:100%;
+font-size:1.125rem;
 }
 
 .navbar-brand{
     max-width:40px;
-    height:auto;
-
-    /* align-self:center; */
+    max-height:50px;
+    display:flex;
 }
 
 .nav-hdg{
-    color:black !important;
-    display:inline-block;
+    color:black;
+    display:flex;
     width:20%;
     padding-top:0px;
-    padding-bottom:0px;    
+    padding-bottom:0px;  
+    font-weight: 700;
+    margin-left:0;
 }
 
 .nav-link{
@@ -159,9 +168,10 @@ margin-left:auto;
 
 .wrp-vid{
     flex-flow:column wrap;
-    padding-top:15px;
+    padding-top:50px;
     padding-bottom:15px;
     margin-bottom:-30px;
+    
 }
 
 
@@ -171,12 +181,11 @@ margin-left:auto;
 }
 
 figcaption{
-    width:90%;
+    width:80%;
     margin-left: auto;
     margin-right: auto;
     text-align: left;
     margin-bottom: 5px;
-    padding-top:18px;
 }
 
 /* Config grid CSS */
@@ -191,7 +200,7 @@ figcaption{
     column-gap:0;
     width:90%;
     margin:10px auto 10px auto;
-}
+    }
 
 .grd-img{
     display:inline-block;
@@ -207,6 +216,9 @@ figcaption{
     width:90%;
     margin-left: auto;
     margin-right: auto;
+    flex-flow:column wrap;
+    justify-content: center;
+    margin:20px auto 20px auto;
 }
 
 .qte-shared{
@@ -215,18 +227,23 @@ figcaption{
     width:95%;
     margin-left: auto;
     margin-right: auto;
-    font-family: 'Roboto' sans-serif;
+    font-family: "Roboto" ,sans-serif;
+    display:flex;
     
 }
 
 .auth{
     margin-bottom:10px;
+    width:45%;
+    justify-content: center;
 }
 
 .qte{
     margin-top:10px;
     font-size: 20px;
     font-style: italic;
+    width:85%;
+    justify-content: center;
 }
 
 
@@ -235,6 +252,8 @@ figcaption{
 
 table{
     font:18px;
+    display:flex;
+    justify-content: center;
 }
 
 
@@ -244,19 +263,25 @@ table{
 }
 
 th{
-    background-color:#FEDA00;
+    background-color:#F7E999;
     color:black;
+    font-style: italic;
 }
 
 td,th{
     width:80px;
     height:38px;
     text-align: center;
-    border:1px solid white;
+    border:1px solid #A5A5A5;
 
 }
 
 /* Contact CSS */
+
+form{
+    margin-left:20px;
+}
+
 
 .lb-bi{
     width:95%;
@@ -264,11 +289,17 @@ td,th{
 
 .in-bi{
     width:80%;
+    margin-bottom: 10px;
+}
+
+.wrp-butn{
+    margin-top:12px;
+    margin-bottom:12px;
 }
 
 textarea{
-    margin:10px auto 10px auto;
-    width:95%;
+    width:80%;
+    margin-top: 24px;
 }
 
 
@@ -276,15 +307,26 @@ textarea{
 
 @media screen and (min-width:991px){
 
+h1,h2,h3,h4{
+    width:20%;
+}
+
 p{
-    width:55%;
+    width:40%;
 
 }
 
 /* Nav CSS */
 
-nav-ctr{
-    height:60px;
+.bg-dark{
+     border-bottom: 3px solid rgba(59, 64,64,0.15);
+}
+
+nav{
+height:75px;
+position:fixed;
+top:0;
+z-index:2;
 }
 
 .mob-dpy{
@@ -292,14 +334,47 @@ nav-ctr{
 }
 
 .scn-dpy{
-display:inline-block;
+display:flex;
+flex-flow: row wrap;
+align-content: center;
 }
 
 .navbar-nav{
 width:auto;
 }
 
+.navbar-brand, .nav-hdg{
+display:flex;
+}
+
+.nav-hdg{
+    width:170px;
+}
+
+.navbar-brand{
+    width:40px;
+    height:50px;
+    align-self: center;
+}
+
+.navbar-item{
+    height:40px;
+}
+
+.nav-item:hover{
+    height:40px;
+}
+
 /* Features CSS */
+
+.wrp-img1{
+    margin:40px auto 20px auto;
+    padding-top:80px;
+}
+
+.p-intro{
+    text-indent: 50px;
+}
 
 
 .hd-img{
@@ -325,7 +400,7 @@ width:auto;
 }
 
 .ctr-li{
-    width:45%;
+    width:35%;
     margin-right:auto;
     margin-left:auto;
     margin-bottom:0px;
@@ -356,8 +431,10 @@ figcaption{
 .wrp-grid{
     column-count:3;
     column-gap:0;
-    width:80%;
-    margin:10px auto 10px auto;
+    width:75.5%;
+    margin:15px auto 15px auto;
+    border:3px solid black;
+    background-color:rgba(186,190,201,0.25);
 }
 
 .grd-img{
@@ -366,6 +443,76 @@ figcaption{
     object-fit: contain;
     margin:0 0 5px 0;
 
+}
+
+/* Testimonial CSS */
+
+.ctr-tsml{
+    margin-top:60px;
+}
+
+.wrp-qte{
+    width:65%;
+    
+}
+
+.qte-shared{
+    width:30%;
+}
+
+.auth{
+    width:15%;
+}
+
+/* Pricing CSS */
+
+table{
+    font-size: 22px;
+}
+
+tr{
+    height:85px;
+    
+}
+
+td,th{
+    width:190px;
+    padding:30px 0px 30px 0px;
+}
+
+.col1{
+    width:250px;
+    padding-left:30px;
+}
+
+/* Contact CSS */
+
+form{
+    margin-right: auto;
+    margin-left: auto;
+    width:40%;
+    
+}
+
+
+
+.lb-bi{
+width:25%;
+display:flex;
+
+}
+
+.in-bi{
+width:20vw;
+display: flex;
+margin-bottom: 10px;
+
+}
+
+textarea{
+    width:40vw;
+    height:25vh;
+    margin-top: 10px;
 }
 
 
