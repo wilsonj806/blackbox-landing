@@ -28,7 +28,7 @@ Requirements done by FCC and [Link here](https://learn.freecodecamp.org/responsi
 ## Workflow consistency in comparison with the last projects
 
 - Continued using Figma to mockup layouts and wireframes
-    ![General link here](https://www.figma.com/file/bpdAsf1BWEJCEeWwtMr6PPxh/Product-Page-Mock)
+    [General link here](https://www.figma.com/file/bpdAsf1BWEJCEeWwtMr6PPxh/Product-Page-Mock)
 - Continued using semantic class names
     - Formatted so class names largely read like so: ` identifier --> application ` 
 - Continued using Semantic Versioning
