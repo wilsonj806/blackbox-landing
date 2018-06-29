@@ -31,6 +31,7 @@ Requirements done by FCC and [Link here](https://learn.freecodecamp.org/responsi
     - [General link here](https://www.figma.com/file/bpdAsf1BWEJCEeWwtMr6PPxh/Product-Page-Mock)
 - Continued using semantic class names
     - Formatted so class names largely read like so: ` identifier --> application ` 
+        - e.g `.ctr-ftr` = `container-feature`
 - Continued using Semantic Versioning
 - Continued focusing more on rapid iteration over getting everything perfect in one go
 
